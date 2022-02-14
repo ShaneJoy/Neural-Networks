@@ -49,7 +49,7 @@ for i in month:
 
 month_arr = np.array(month)
 predictions = Predict(month_arr)
-print(predictions)
+print("\nPredictions Array: " , predictions)
 
 x = 0
 N = len(predictions)
@@ -58,4 +58,4 @@ for i in range(1, len(month_arr), 2):
     MSE += (1/N) * (pow((predictions[x] - month_arr[i]), 2))
     x+=1
 
-print("MSE:", MSE)
+print("\nMSE:", MSE)
